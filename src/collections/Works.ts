@@ -51,6 +51,13 @@ const Works: CollectionConfig = {
             label: "Work Page Background (#xxxxxx)",
             required: true,
         },
+        {
+            name: "thumbnail",
+            type: "upload",
+            relationTo: "media",
+            label: "Thumbnail",
+            required: true,
+        }
     ],
 };
 
