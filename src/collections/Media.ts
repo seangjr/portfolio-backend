@@ -6,10 +6,15 @@ const Media: CollectionConfig = {
     },
     upload: {
         staticURL: "/media",
-        staticDir: "media",
+        staticDir: "/media",
         mimeTypes: ["image/jpeg", "image/png", "image/gif"],
     },
-    fields: []
+    fields: [
+        {
+            name: "Alt text",
+            type: "text",
+        }
+    ]
 }
 
 export default Media;
